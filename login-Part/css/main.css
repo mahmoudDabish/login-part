@@ -1,0 +1,64 @@
+:root{
+    --primary:#2196f3;
+    --focus-login-border:#27374D;
+
+}
+
+.form-select{
+  border: 1px solid #9e9e9e;
+  padding-block: 0.4rem;
+  border-radius: 10px;
+}
+
+.loginInput-group {
+    font-size: 1.25rem;
+    position: relative;
+    --primary: #2196f3;
+  }
+  
+  .loginInput {
+    width: 100%;
+    padding-block: 0.5rem ;
+    color: black;
+    border: 1px solid #9e9e9e;
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: normal;
+  }
+  
+  .loginLabel {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    color: #d4d4d4;
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .loginInput:focus {
+    border: 1px solid var(--focus-login-border);
+  }
+  
+  .loginInput:is(:focus, :valid) ~ label {
+    transform: translateY(-95%) scale(0.8);
+    background-color: #ffffff;
+    padding-inline: 0.3rem;
+    color: var(--focus-login-border); 
+  }
+
+  .btn-dark {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #27374D;
+    --bs-btn-border-color: #27374D;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #27374df3;
+    --bs-btn-hover-border-color: #27374df3;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #27374D;
+    --bs-btn-active-border-color: #27374D;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+  }
